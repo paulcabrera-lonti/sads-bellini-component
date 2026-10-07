@@ -1,0 +1,24 @@
+{
+  "type": "custom-component",
+  "name": "aa",
+  "children": [
+    {
+      "name": "Breadcrumbs",
+      "nodeName": "bln-breadcrumbs",
+      "attributes": [
+        {
+          "property": "core",
+          "value": ""
+        }
+      ],
+      "classList": [],
+      "children": [],
+      "type": "core-component",
+      "expressions": []
+    }
+  ],
+  "variables": [],
+  "bindings": [],
+  "modules": [],
+  "styles": []
+}

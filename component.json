@@ -1,0 +1,242 @@
+{
+  "type": "component",
+  "name": "sads",
+  "children": [
+    {
+      "name": "div",
+      "classList": [
+        "modal-header"
+      ],
+      "children": [
+        {
+          "name": "div",
+          "classList": [
+            "modal-title"
+          ],
+          "children": [
+            {
+              "name": "text",
+              "textContent": "Title",
+              "evaluate": false
+            }
+          ]
+        },
+        {
+          "name": "div",
+          "attributes": [
+            {
+              "property": "tabindex",
+              "value": "0"
+            }
+          ],
+          "classList": [
+            "modal-close"
+          ],
+          "events": {
+            "click": "$ctrl.onCancelClick()"
+          },
+          "children": [
+            {
+              "name": "text",
+              "textContent": "×",
+              "evaluate": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "div",
+      "classList": [
+        "modal-body"
+      ],
+      "children": [
+        {
+          "name": "aa",
+          "nodeName": "aa",
+          "classList": [],
+          "children": [],
+          "type": "custom-component",
+          "ownerId": "6a6706285c88e86aa6b82479",
+          "ownerType": "component",
+          "expressions": []
+        }
+      ]
+    },
+    {
+      "name": "div",
+      "classList": [
+        "modal-footer"
+      ],
+      "children": [
+        {
+          "name": "Button",
+          "nodeName": "bln-button",
+          "attributes": [
+            {
+              "property": "core",
+              "value": ""
+            }
+          ],
+          "classList": [
+            "btn-cancel"
+          ],
+          "children": [],
+          "type": "core-component",
+          "expressions": [
+            {
+              "expression": "\"default\"",
+              "to": "type"
+            },
+            {
+              "expression": "'Cancel'",
+              "to": "label"
+            },
+            {
+              "expression": "$ctrl.onCancelClick()",
+              "to": "onClick"
+            }
+          ]
+        },
+        {
+          "name": "Button",
+          "nodeName": "bln-button",
+          "attributes": [
+            {
+              "property": "core",
+              "value": ""
+            }
+          ],
+          "classList": [
+            "btn-ok"
+          ],
+          "children": [],
+          "type": "core-component",
+          "expressions": [
+            {
+              "expression": "\"primary\"",
+              "to": "type"
+            },
+            {
+              "expression": "'OK'",
+              "to": "label"
+            },
+            {
+              "expression": "$ctrl.onOkClick()",
+              "to": "onClick"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": [
+    {
+      "name": "onOkClick",
+      "description": "This function is called when OK button is clicked.",
+      "type": "method",
+      "body": "$ctrl.result = 'ok'\n$ctrl.onClose()",
+      "invokeOnLoad": false,
+      "isAsync": false,
+      "returnType": {
+        "name": "any"
+      },
+      "parameters": [],
+      "watch": []
+    },
+    {
+      "name": "onCancelClick",
+      "description": "This function is called when Cancel button is clicked.",
+      "type": "method",
+      "body": "$ctrl.result = 'cancel'\n$ctrl.onClose()",
+      "invokeOnLoad": false,
+      "isAsync": false,
+      "returnType": {
+        "name": "any"
+      },
+      "parameters": [],
+      "watch": []
+    }
+  ],
+  "bindings": [
+    {
+      "name": "onClose",
+      "type": "<",
+      "default": "() => {}",
+      "description": "This function should be called to close the modal.",
+      "visibleWhen": "",
+      "label": "",
+      "group": "",
+      "example": "",
+      "actions": [],
+      "propertyType": "function"
+    },
+    {
+      "name": "result",
+      "type": "<",
+      "default": "",
+      "description": "The result of the modal that is returned after the modal is closed.",
+      "visibleWhen": "",
+      "label": "",
+      "group": "",
+      "example": "",
+      "actions": [],
+      "propertyType": "enum",
+      "enumOptions": [
+        {
+          "value": "ok"
+        },
+        {
+          "value": "cancel"
+        }
+      ]
+    }
+  ],
+  "modules": [],
+  "styles": [],
+  "directories": {
+    "assets": [],
+    "components": [
+      {
+        "id": "qyPgK4EwyQxrK5iba3QlJ",
+        "name": "asd"
+      },
+      {
+        "id": "NAhZi-tMUQpeB3tWlJOMy",
+        "name": "as"
+      }
+    ],
+    "scripts": [],
+    "stylesheets": [
+      {
+        "id": "23o5oe2AdnkREA1j5S8vA",
+        "name": "ss"
+      }
+    ]
+  },
+  "externalScripts": [
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/javascript/javascript.min.js",
+      "properties": {
+        "type": "default",
+        "executionMode": "default",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "default"
+      }
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.js",
+      "properties": {
+        "type": "default",
+        "executionMode": "default",
+        "crossorigin": "anonymous",
+        "referrerpolicy": "default"
+      }
+    }
+  ],
+  "localScripts": [
+    {
+      "path": "aa.js"
+    }
+  ]
+}
